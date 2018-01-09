@@ -1,5 +1,4 @@
 require_relative '../lib/game_status.rb'
-
 describe "./lib/game_status.rb" do
   describe 'WIN_COMBINATIONS' do
     it 'defines a constant WIN_COMBINATIONS with arrays for each win combination' do
@@ -101,7 +100,7 @@ describe "./lib/game_status.rb" do
 
     it 'returns false for a game won in the first row' do
       board = ["X", "X", "X", "O", "X", "O", "O", "O", "X"]
-
+#binding.pry 
       expect(draw?(board)).to be_falsey
     end
 
